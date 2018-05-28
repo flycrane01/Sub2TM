@@ -55,11 +55,11 @@ def namemodifier(string):
     return string
 
 
-# link = 'http://www.zimuzu.tv/subtitle/10139'
-# os.mkdir('Download')
+log = open('log.txt','a+',encoding='utf-8')
+os.mkdir('Download')
 os.chdir('Download')
-# downloader(link)
-for i in range(10200,10300):
+for i in range(1,56300):
     link = 'http://www.zimuzu.tv/subtitle/' + str(i)
     print('downloading ' + link)
     downloader(link)
+    
